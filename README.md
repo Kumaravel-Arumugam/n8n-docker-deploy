@@ -78,9 +78,3 @@ The guide covers:
 | `USER_GUIDE.md` | Detailed setup & customization guide |
 | `Dockerfile.runners` | Python packages for code execution |
 | `n8n-task-runners.json` | Task runner configuration |
-
----
-
-## License
-
-MIT
