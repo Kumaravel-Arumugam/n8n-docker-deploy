@@ -1,0 +1,25 @@
+FROM n8nio/runners
+
+USER root
+
+# Install ONLY the Python packages.
+RUN cd /opt/runners/task-runner-python && \
+    uv pip install \
+    numpy \
+    pandas \
+    matplotlib \
+    mplfinance \
+    mplcyberpunk \
+    requests \
+    beautifulsoup4 \
+    pillow \
+    selenium \
+    webdriver-manager \
+    tqdm \
+    openpyxl \
+    fpdf
+
+# CRITICAL: Copy our config file to override the base image's empty allowlists
+COPY n8n-task-runners.json /etc/n8n-task-runners.json
+
+USER runner

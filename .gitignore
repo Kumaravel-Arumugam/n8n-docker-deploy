@@ -1,0 +1,59 @@
+# ==============================================================================
+# n8n Docker Deployment - GitIgnore
+# ==============================================================================
+
+# =========================
+# SENSITIVE / PRIVATE FILES
+# =========================
+
+# Environment file - Contains passwords, API keys, tokens
+.env
+.env.*
+*.env
+
+# =========================
+# DATA DIRECTORIES
+# =========================
+
+# PostgreSQL database data
+database_postgres/
+
+# n8n application data (workflows, credentials, settings)
+n8n_data_postgres/
+
+# Ollama model data (large binary files)
+ollama_data/
+
+# Qdrant vector database storage
+qdrant/
+
+# =========================
+# GENERAL IGNORES
+# =========================
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
