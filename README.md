@@ -30,8 +30,8 @@ If you want to use the **exact same setup** as this deployment:
 
 ```bash
 # 1. Clone this repo
-git clone <this-repo-url>
-cd <repo-folder>
+git clone https://github.com/Kumaravel-Arumugam/n8n-docker-deploy.git
+cd n8n-docker-deploy
 
 # 2. Create your environment file from template
 cp .env.example .env
@@ -66,6 +66,24 @@ The guide covers:
 - Resource limits based on your hardware
 - Docker commands reference
 - Troubleshooting
+
+---
+
+## Enabling MCP Server (For AI Workflow Creation)
+
+To use this n8n instance with the [n8n-workflow-manager](https://github.com/Kumaravel-Arumugam/n8n-workflow-manager):
+
+1. Access n8n at `http://localhost:5678`
+2. Go to **Settings** → **MCP Server** (if available) or ensure API access is enabled
+3. Enable MCP Server
+4. Copy the access token
+5. Use this token in your Agentic IDE's MCP configuration
+
+---
+
+## Credits
+
+Created by **Kumaravel Arumugam** using AI-assisted development.
 
 ---
 

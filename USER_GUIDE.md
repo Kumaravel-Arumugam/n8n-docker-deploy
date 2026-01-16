@@ -37,8 +37,9 @@ This project deploys n8n (workflow automation) with Docker Compose. It includes:
 ## Prerequisites
 
 - Docker Desktop installed and running
+- **Windows users**: WSL2 must be enabled for Docker Desktop
 - At least 4GB RAM available for containers
-- (Optional) NVIDIA GPU with drivers for Ollama
+- (Optional) NVIDIA GPU with drivers for Ollama (For Windows: drivers must be installed in WSL2)
 
 ---
 
