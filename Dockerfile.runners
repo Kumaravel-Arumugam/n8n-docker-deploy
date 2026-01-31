@@ -1,13 +1,15 @@
-FROM n8nio/runners
+FROM n8nio/runners:2.5.2
 
 USER root
 
-# Install ONLY the Python packages.
+# Install Python packages
+# CRITICAL FIX: We pin "pandas<3.0.0" to avoid the breaking changes in v3
+# We also pin "numpy<2.3.0" to ensure it matches the Pandas 2.x ecosystem
 RUN cd /opt/runners/task-runner-python && \
     uv pip install \
-    numpy \
-    pandas \
-    matplotlib \
+    "numpy>=1.26.0,<2.0.0" \
+    "pandas>=2.2.0,<3.0.0" \
+    "matplotlib>=3.9.0" \
     mplfinance \
     mplcyberpunk \
     requests \

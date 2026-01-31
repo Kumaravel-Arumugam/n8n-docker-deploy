@@ -24,7 +24,9 @@
       "env-overrides": {
         "PYTHONPATH": "/opt/runners/task-runner-python",
         "N8N_RUNNERS_STDLIB_ALLOW": "json,math,re,datetime,random,collections,itertools,io,base64,sys,os,time,pickle,tempfile",
-        "N8N_RUNNERS_EXTERNAL_ALLOW": "numpy,pandas,matplotlib,mplfinance,mplcyberpunk,requests,bs4,dateutil,selenium,webdriver_manager,tqdm,openpyxl,fpdf"
+        "N8N_RUNNERS_EXTERNAL_ALLOW": "numpy,pandas,matplotlib,mplfinance,mplcyberpunk,requests,beautifulsoup4,selenium,webdriver-manager,tqdm,openpyxl,fpdf",
+        "N8N_RUNNERS_AUTO_SHUTDOWN_TIMEOUT": "60",
+        "N8N_RUNNERS_TASK_TIMEOUT": "300000"
       }
     }
   ]
